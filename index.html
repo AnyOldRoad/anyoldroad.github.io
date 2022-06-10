@@ -7,19 +7,19 @@
     <body>
         <h1>anyoldroad.github.io</h1>
         <div class="container">
-            <div class="loading cursor">
+            <div class="loading">
                 C:\
+            
+                <div class="loadinglater cursor">
+                    aor.exe
+                </div>
             </div>
         </div>
-        <br>
-        <div class="container">
-            <div class="loadinglater cursor">
-                C:\aor.exe
-            </div>
-        </div>
+
         <br>
         <div class="container">
             <div class="appear">
+                <br>
                 Loading...</div>
         </div>
         <br>
@@ -60,7 +60,7 @@
     .loading {
         width: 0;
         overflow: hidden;
-        animation: typing 0.5s steps(20, end) forwards,
+        animation: typing 0.5s steps(1, end) forwards,
         blink .8s 3;
         animation-delay: 1s;
     }
@@ -68,7 +68,7 @@
     .loadinglater {
         width: 0;
         overflow: hidden;
-        animation: typing 1s steps(20, end) forwards,
+        animation: typing 1s steps(10, end) forwards,
         blink .8s 3;
         animation-delay: 4s;
     }
@@ -76,7 +76,7 @@
     .cursor {
         border-right: .15em solid black;
     }
-    
+
     @keyframes typing {
         from { width: 0 }
         to { width: 100% }
