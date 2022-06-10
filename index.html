@@ -1,1 +1,100 @@
-anyoldroad.github.io
+<!DOCTYPE html>
+<html lang="en-uk">
+    <head>
+        <meta charset="utf8" />
+        <title>AnyOldRoad.github.io</title>
+    </head>
+    <body>
+        <h1>anyoldroad.github.io</h1>
+        <div class="container">
+            <div class="loading cursor">
+                C:\
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="loadinglater cursor">
+                C:\aor.exe
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="appear">
+                Loading...</div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="appearlater">
+                Load failed :( Please check back soon.</div>
+        </div>
+    </body>
+</html>
+
+<style>
+    body {
+        background: #000;
+        color: #fff;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .container {
+        display: inline-block;
+        line-break: auto;
+    }
+
+    .appear {
+        color: #000;
+        animation: fadein 0s forwards;
+        animation-delay: 8s;
+        display: block;
+    }
+
+    .appearlater {
+        color: #000;
+        animation: fadeinred 0s forwards;
+        animation-delay: 11s;
+        display: block;
+        margin-top: 20px;
+    }
+
+    .loading {
+        width: 0;
+        overflow: hidden;
+        animation: typing 0.5s steps(20, end) forwards,
+        blink .8s 3;
+        animation-delay: 1s;
+    }
+
+    .loadinglater {
+        width: 0;
+        overflow: hidden;
+        animation: typing 1s steps(20, end) forwards,
+        blink .8s 3;
+        animation-delay: 4s;
+    }
+
+    .cursor {
+        border-right: .15em solid black;
+    }
+    
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
+    @keyframes blink {
+        from { border-color: lime }
+        to { border-color: black; }
+        }
+    
+    @keyframes fadein {
+        from { color: #000 }
+        to { color: #fff }
+    }
+
+    @keyframes fadeinred {
+        from { color: #000 }
+        to { color: red }
+    }
+
+</style>
